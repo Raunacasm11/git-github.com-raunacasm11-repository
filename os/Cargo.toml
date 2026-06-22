@@ -1,0 +1,18 @@
+[package]
+name = "os"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+riscv = "0.6"
+bitflags = "1.2.1"
+buddy_system_allocator = "0.6"
+spin = "0.7"
+xmas-elf = "0.7.0"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = 3

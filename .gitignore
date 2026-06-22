@@ -1,0 +1,13 @@
+# Block problematic QEMU folder with symlinks (crashes Git on Windows)
+qemu-5.2.0/
+rust-toolchain.bak/
+*.bak
+
+# Compiled build output folders
+os/target/
+user/target/
+bootloader/target/
+
+# Windows system junk files
+Thumbs.db
+.DS_Store
